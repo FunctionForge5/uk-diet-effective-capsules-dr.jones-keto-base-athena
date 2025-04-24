@@ -1,0 +1,165 @@
+:root {
+    --all-color: #00a284;
+}
+
+#imgdesctop {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 !important;
+}
+
+.composition-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.composition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.composition-container .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.composition-container .image-section {
+    padding: 10px;
+    width: 200px;
+    height: 225px;
+    position: relative;
+}
+.composition-container .text-label {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--all-color);
+    text-transform: uppercase;
+}
+.composition-container .composition-top {
+    width: 100%;
+    height: 120px;
+    top: 20%;
+    position: relative;
+    z-index: 10;
+}
+.composition-container .composition-bottom {
+    width: 100%;
+    height: 120px;
+    top: 20%;
+    position: relative;
+    z-index: 10;
+}
+.composition-container .fourrure {
+    top: 10px;
+    left: 10px;
+}
+.composition-container .fourrure::after {
+    content: '';
+    width: 2px;
+    height: 25px;
+    background: var(--all-color);
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    z-index: 1;
+}
+.composition-container .fourrure::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--all-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    z-index: 1;
+}
+.composition-container .muscle {
+    bottom: 10px;
+    left: 10px;
+}
+.composition-container .muscle::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--all-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 38px;
+    z-index: 1;
+}
+.composition-container .muscle::before {
+    content: '';
+    width: 40px;
+    height: 38px;
+    background: transparent;
+    display: block;
+    border-right: 2px solid var(--all-color);
+    border-bottom: 2px solid var(--all-color);
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    z-index: 1;
+}
+.composition-container .graisse {
+    bottom: 10px;
+    right: 10px;
+}
+.composition-container .graisse::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--all-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    z-index: 1;
+}
+.composition-container .graisse::before {
+    content: '';
+    width: 30px;
+    height: 58px;
+    background: transparent;
+    display: block;
+    border-top: 2px solid var(--all-color);
+    border-right: 2px solid var(--all-color);
+    border-bottom: 2px solid var(--all-color);
+    position: absolute;
+    top: -60px;
+    right: -15px;
+    z-index: 1;
+}
+.composition-container .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--all-color);
+    text-transform: uppercase;
+}
+
+.product-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--all-color);
+    padding: 0 20px;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .composition-container {
+        flex-direction: column;
+    }
+    .product-name {
+        margin-bottom: 10px;
+    }
+}
